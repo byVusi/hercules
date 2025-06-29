@@ -28,11 +28,21 @@ const FILES_TO_CACHE = [
 self.addEventListener("install", function (event) {
 	event.waitUntil(
 		caches.open(CACHE_NAME).then(function (cache) {
-			return cache.addAll(FILES_TO_CACHE);
+			return Promise.all(
+				FILES_TO_CACHE.map(function (file) {
+					return fetch(file).then(function (response) {
+						if (!response.ok) {
+							throw new Error("Request failed for: " + file + " (" + response.status + ")");
+						}
+						return cache.put(file, response.clone());
+					});
+				})
+			);
 		})
 	);
-	self.skipWaiting(); // Forces the waiting service worker to become active.
+	self.skipWaiting();
 });
+
 
 /**
  * Activate event handler.
