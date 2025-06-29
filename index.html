@@ -107,15 +107,6 @@
 		</nav>
 
 		<script>
-			if ("serviceWorker" in navigator) {
-				navigator.serviceWorker
-					.register("sw.js")
-					.then(() => console.log("✅ Service Worker registered"))
-					.catch((err) =>
-						console.error("❌ Service Worker failed:", err)
-					);
-			}
-
 			// Update the date in the header of each view
 			document.querySelectorAll(".view h3+p").forEach((el) => {
 				el.textContent = `${new Date().toLocaleDateString("en-US", {
