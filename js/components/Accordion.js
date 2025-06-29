@@ -124,19 +124,7 @@ function createAccordionBody(data) {
 	const restTime = data?.rest
 		? `<span>(${data?.rest}s rest between sets)</span>`
 		: "";
-	// const htmlString =
-	// <div class="accordion-body">
-	//     <video controls>
-	//         <source src="${data?.demo}" type="video/mp4">
-	//         Your browser does not support the video tag.
-	//     </video>
-	//     <div class='exercise-notes'>
-	//         <p><strong>Equipment:</strong> ${equipment.join(", ")}</p>
-	//         <p><strong>Recommended:</strong> ${data?.recommended}, ${restTime}</p>
-
-	//     </div>
-	//  </div>;
-
+	
 	const htmlString = `
 	<div class="accordion-body">
 		<iframe src="${
@@ -176,10 +164,7 @@ function createExerciseAccordionBody(data) {
 	const equipment = data?.equipment.map((e) => utilities.capitalise(e));
 	const htmlString = `
     <div class="accordion-body">
-        <iframe src="${
-			data?.demo
-		}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		<h5 class="pt-3 pb-3">Exercise information</h5>
+        <h5 class="pt-3 pb-3">Exercise information</h5>
         <div class='exercise-notes'>
 			<p><strong>Category:</strong> ${utilities.capitalise(
 				data?.category
