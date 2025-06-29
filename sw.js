@@ -4,7 +4,7 @@
  * and serves cached assets when offline.
  */
 
-const CACHE_NAME = "Hercules-v2";
+const CACHE_NAME = "Hercules-v1";
 
 /**
  * List of static assets to cache during the install event.
