@@ -3,14 +3,14 @@
  * This is a root-relative URL (starts from the site root).
  * @constant {string}
  */
-const manifestJSON_Path = "/manifest.json";
+const manifestJSON_Path = "./manifest.json";
 
 /**
  * Path to the workout programs JSON file.
  * This is a root-relative URL to a data asset.
  * @constant {string}
  */
-const workoutPrograms_Path = "/assets/data/workoutPrograms.json";
+const workoutPrograms_Path = "./assets/data/workoutPrograms.json";
 
 /**
  * Fetches and parses a JSON file from the given URL.
