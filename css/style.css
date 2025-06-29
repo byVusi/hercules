@@ -1,0 +1,429 @@
+/* ---------------- Reset & Base ---------------- */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: system-ui, sans-serif;
+	line-height: 1.5;
+	background-color: #fafafa;
+	color: #333;
+	overflow: hidden; /* hide page scroll */
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#status-message {
+	width: 90%;
+	margin: 0.5rem auto;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	background-color: #ffe6e6;
+}
+
+/* ---------------- Header (fixed) ---------------- */
+header {
+	flex: 0 0 76px; /* you can adjust this “4rem” to match your actual header height + padding */
+	background: #fafafa;
+	padding: 1rem;
+	width: 100%;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+/* ---------------- Main (scrollable) ---------------- */
+main {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	background-color: hsl(0, 0%, 95%);
+	/* optional: center your content wrapper within main */
+	display: flex;
+	justify-content: center;
+
+	/* Animated sliding - experiment */
+	position: relative;
+	overflow: hidden;
+}
+
+/* Hide scrollbars but keep scrolling active */
+main {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+}
+main::-webkit-scrollbar {
+	display: none; /* Chrome/Safari/Edge */
+}
+
+/* ---------------- Footer / Nav (fixed) ---------------- */
+nav {
+	flex: 0 0 78px; /* match this to your desired nav height + padding */
+	background: #fafafa;
+	padding: 1rem;
+	width: 100%;
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+nav,
+nav * {
+	user-select: none;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE/Edge */
+	-webkit-touch-callout: none; /* Disable long-press menu on iOS */
+	touch-action: manipulation; /* Prevent delays on tap */
+}
+nav ul {
+	padding-left: 0;
+}
+
+/* ---------------- Typography ---------------- */
+h1 {
+	font-size: clamp(1.5rem, 2vw, 2.5rem);
+	margin-bottom: 0.5rem;
+}
+h2 {
+	font-size: clamp(1.25rem, 1.5vw, 2rem);
+	margin-bottom: 0.5rem;
+}
+h3 {
+	font-size: clamp(1rem, 1.25vw, 1.5rem);
+	margin-bottom: 0.5rem;
+}
+h4 {
+	font-size: clamp(0.875rem, 1vw, 1.25rem);
+	margin-bottom: 0.5rem;
+}
+p {
+	font-size: clamp(0.875rem, 1vw, 1rem);
+	margin-bottom: 1rem;
+}
+
+/* ---------------- Wrapper (centers content) ---------------- */
+main .wrapper {
+	padding: 2rem 0 1rem;
+}
+
+.wrapper,
+div[class$="-header"] {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+}
+
+/* ---------------- Links & Navigation ---------------- */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover:not(header a) {
+	text-decoration: underline;
+}
+
+header a:hover {
+	opacity: 0.9;
+}
+
+/* Make the “active” icon/text stand out */
+nav .active,
+a:not(header a) {
+	color: #1086fc;
+}
+
+/* Navigation list */
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+nav ul li div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.25rem;
+	cursor: pointer;
+}
+nav ul li div span {
+	font-size: clamp(0.75rem, 0.75vw, 1rem);
+}
+nav ul li:hover {
+	opacity: 0.85;
+}
+
+/* ---------------- Responsive Gestures ---------------- */
+.view {
+	display: none;
+	height: 100%;
+	overflow-y: auto;
+
+	/* Animated sliding - experiment */
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	transition: left 0.3s ease-in-out;
+	overflow-y: auto;
+	background: #efefef; /* Ensure background doesn't flash */
+	z-index: 0;
+	min-height: 100%;
+	padding: 1rem;
+}
+
+.view.active {
+	display: block;
+
+	/* Animated sliding - experiment */
+	left: 0;
+	z-index: 1;
+}
+
+.view.slide-left {
+	left: -100%;
+}
+
+.view.slide-right {
+	left: 100%;
+}
+
+.accordion {
+	padding: 1rem 0;
+}
+
+.today-content .accordion ul {
+	padding: 0;
+	margin: 0;
+}
+
+.today-content .accordion li {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.today-content .accordion li label {
+	flex: 0 0 80px; /* Fixed width for labels */
+	font-weight: bold;
+}
+
+.today-content .accordion li input {
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+	text-align: right;
+	padding: 0.25rem 1rem;
+	border-bottom: 2px solid #ccc;
+}
+
+.today-content .accordion li input:focus {
+	border-bottom-color: #1086fc;
+}
+
+/* Accordion */
+/* .accordion-body video {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 600px;
+	margin: 0 auto 1rem;
+} */
+
+.accordion-body iframe {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9; /* Ensures proper video proportions */
+	max-width: 600px;
+	margin: 0 auto 1rem;
+	border: none;
+}
+
+.exercise-notes:not(.exercises-content .exercise-notes) {
+	font-style: italic;
+	color: #777;
+}
+
+.form-field {
+	display: flex;
+	gap: 1rem;
+}
+
+.form-field label {
+	flex: 1;
+}
+
+.form-field input {
+	flex: 1;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.alert {
+	width: 100%;
+	max-width: 500px;
+	margin: 0.5rem auto;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.prevent-select {
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+.today-header,
+.workouts-header,
+.exercises-header,
+.progress-header {
+	opacity: 0.7;
+}
+
+.today-header h3 + p,
+.workouts-header h3 + p,
+.exercises-header h3 + p,
+.progress-header h3 + p {
+	font-size: small;
+}
+
+.workout-completed {
+	background-color: #d1e7dd;
+	color: #198754;
+}
+
+#program-list,
+#program-list ol {
+	margin: 0;
+}
+
+#program-list {
+	padding-left: 0;
+	display: flex;
+	gap: 2rem;
+	flex-flow: column nowrap;
+}
+
+#program-list .card {
+	flex: 1;
+}
+
+#program-list ol {
+	padding: 0.5rem 1rem;
+}
+
+#exercise-list {
+	margin: 0 0 1rem;
+	padding: 0;
+	list-style: none;
+	border-width: 0.0625rem;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.175);
+}
+
+#exercise-list li {
+	padding: 1rem;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+#exercise-list li span {
+	flex: 1;
+}
+
+#exercise-list li i {
+	padding: 0.5rem;
+	background-color: #b8ecf6;
+	color: #0c323a;
+	border-radius: 0.375rem;
+}
+
+#exercise-list li:not(#exercise-list li:last-of-type) {
+	border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.175);
+}
+
+#exercise-list,
+#exercise-list li:first-of-type {
+	border-top-left-radius: 0.375rem;
+	border-top-right-radius: 0.375rem;
+}
+
+#exercise-list,
+#exercise-list li:last-of-type {
+	border-bottom-left-radius: 0.375rem;
+	border-bottom-right-radius: 0.375rem;
+}
+
+.placeholder-text {
+	text-align: center;
+	color: rgba(51, 51, 51, 0.5);
+}
+
+.placeholder-image {
+	width: 50px;
+	filter: opacity(0.3);
+	display: block;
+	margin: 1rem auto;
+}
+
+.card-img-top {
+	width: 100%;
+}
+
+.floating-alert {
+	width: 95%;
+	max-width: 790px;
+	margin: auto;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3000;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	#program-list {
+		flex-flow: row wrap;
+	}
+
+	#program-list .card {
+		min-width: 18rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.floating-alert {
+		width: 100%;
+		max-width: 800px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
