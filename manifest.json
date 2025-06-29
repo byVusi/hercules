@@ -2,7 +2,7 @@
 	"name": "Hercules",
 	"short_name": "Hercules",
 	"description": "A modern progressive web app called Hercules.",
-	"start_url": "/",
+	"start_url": "/hercules/",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#ffffff",
