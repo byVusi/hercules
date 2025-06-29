@@ -11,12 +11,12 @@ const CACHE_NAME = "Hercules-v1";
  * @constant {string[]}
  */
 const FILES_TO_CACHE = [
-	"/hercules/",
-	"/hercules/index.html",
-	"/hercules/css/style.css",
-	"/hercules/js/app.js",
-	"/hercules/icons/icon-192.png",
-	"/hercules/icons/icon-512.png",
+	"./",
+	"./index.html",
+	"./css/style.css",
+	"./js/app.js",
+	"./icons/icon-192.png",
+	"./icons/icon-512.png",
 ];
 
 /**
