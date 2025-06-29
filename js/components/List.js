@@ -25,7 +25,7 @@ export function createListOfCards(data) {
 function createCard(data, key) {
 	const htmlString = `
     <div class="card" data-program-key="${key}">
-        <img src="${data?.imageUrl}" class="card-img-top" alt="#">
+        <img loading="lazy" src="${data?.imageUrl}" class="card-img-top" alt="#">
         <div class="card-body">
             <h5 class="card-title">${data?.title}</h5>
             <p class="card-text">${data?.description}</p>
