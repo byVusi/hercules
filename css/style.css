@@ -1,0 +1,414 @@
+/* ---------------- Reset & Base ---------------- */
+:root {
+	--bg-light: #fafafa;
+	--bg-dark: #222;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	font-family: system-ui, sans-serif;
+	line-height: 1.5;
+	background-color: var(--bg-light);
+	color: var(--bg-dark);
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ---------------- Header (fixed) ---------------- */
+header {
+	flex: 0 0 4.75rem;
+	width: 100%;
+	padding: 1rem;
+	background: var(--bg-light);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+/* ---------------- Main (scrollable) ---------------- */
+main {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 auto;
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+
+	/* Hide scrollbars */
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+}
+
+main::-webkit-scrollbar {
+	display: none; /* Chrome/Safari/Edge */
+}
+
+/* ---------------- Nav (fixed) ---------------- */
+nav {
+	flex: 0 0 4.75rem;
+	width: 100%;
+	padding: 1rem;
+	background: var(--bg-light);
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+nav,
+nav * {
+	user-select: none;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE/Edge */
+	-webkit-touch-callout: none; /* Disable long-press menu on iOS */
+	touch-action: manipulation; /* Prevent delays on tap */
+}
+nav ul {
+	padding-left: 0;
+}
+
+/* ---------------- Links & Navigation ---------------- */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover:not(header a) {
+	text-decoration: underline;
+}
+header a:hover {
+	opacity: 0.9;
+}
+nav .active,
+a:not(header a) {
+	color: var(--bs-primary);
+}
+
+nav ul,
+nav ul li div {
+	display: flex;
+	align-items: center;
+}
+
+nav ul {
+	justify-content: space-around;
+	gap: 1rem;
+	height: 100%;
+	list-style: none;
+}
+nav ul li div {
+	flex-direction: column;
+	gap: 0.25rem;
+	cursor: pointer;
+}
+nav ul li div span {
+	font-size: clamp(0.75rem, 0.75vw, 1rem);
+}
+nav ul li:hover {
+	opacity: 0.85;
+}
+
+/* ---------------- Typography ---------------- */
+h1,
+h2,
+h3,
+h4,
+p {
+	margin-bottom: 0.5rem;
+}
+h1 {
+	font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+h2 {
+	font-size: clamp(1.25rem, 1.5vw, 2rem);
+}
+h3 {
+	font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+h4 {
+	font-size: clamp(0.875rem, 1vw, 1.25rem);
+}
+p {
+	margin-bottom: 1rem;
+	font-size: clamp(0.875rem, 1vw, 1rem);
+}
+
+/* ---------------- Wrapper (centers content) ---------------- */
+main .wrapper {
+	padding: 2rem 0 1rem;
+}
+
+.wrapper,
+div[class$="-header"] {
+	width: 100%;
+	max-width: 50rem;
+	margin: auto;
+}
+
+/* ---------------- Responsive Gestures ---------------- */
+.view {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	padding: 1rem;
+	background: #efefef; /* Ensure background doesn't flash */
+	transition: left 0.3s ease-in-out;
+	overflow-y: auto;
+	z-index: 0;
+}
+.view.active {
+	display: block;
+	left: 0;
+	z-index: 1;
+}
+.view.slide-left {
+	left: -100%;
+}
+.view.slide-right {
+	left: 100%;
+}
+
+/* ---------------- Accordions ---------------- */
+.accordion {
+	padding: 1rem 0;
+}
+.accordion ul {
+	padding: 0;
+	margin: 0;
+}
+.accordion li {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+}
+.today-content .exercise-notes {
+	font-style: italic;
+	color: #777;
+}
+.accordion .badge {
+	margin-right: 0.5rem;
+}
+
+/* ---------------- Cards ---------------- */
+#program-list {
+	margin: 0;
+}
+#program-list,
+.today-progress,
+.progress-data {
+	display: flex;
+}
+#program-list {
+	gap: 2rem;
+	flex-flow: column nowrap;
+	padding-left: 0;
+}
+#program-list .card {
+	flex: 1;
+}
+.card-img-top {
+	width: 100%;
+}
+.today-progress {
+	flex-flow: row nowrap;
+	gap: 1rem;
+	width: 100%;
+	padding: 1rem 0;
+	overflow: auto; /* hide page scroll */
+	scroll-behavior: smooth;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+}
+.today-progress::-webkit-scrollbar {
+	display: none; /* Chrome/Safari/Edge */
+}
+.progress-card {
+	min-width: max-content;
+}
+.progress-card .card-body {
+	position: relative;
+}
+.progress-data {
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+}
+.progress-card h6 {
+	text-align: center;
+	font-size: smaller;
+}
+.progress-card p {
+	font-size: 2rem;
+}
+.progress-card i {
+	font-size: 1rem;
+}
+.progress-card .card-body span,
+.progress-card .card-footer {
+	font-size: small;
+}
+.progress-card .card-body span:nth-of-type(1) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0.5rem;
+}
+.progress-card .card-body span:nth-of-type(2) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.5rem;
+}
+
+/* ---------------- Forms ---------------- */
+.accordion li label {
+	flex: 0 0 5rem; /* Fixed width for labels */
+	font-weight: bold;
+}
+.accordion li input {
+	padding: 0.25rem 1rem;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #ccc;
+	background: transparent;
+	text-align: right;
+}
+.accordion li input:focus {
+	border-bottom-color: #1086fc;
+}
+.form-field {
+	display: flex;
+	gap: 1rem;
+}
+.accordion li input,
+.form-field label,
+.form-field input {
+	flex: 1;
+}
+.workout-completed {
+	background-color: #d1e7dd;
+	color: #198754;
+}
+
+/* ---------------- Media ---------------- */
+.accordion-body iframe {
+	display: block;
+	width: 100%;
+	max-width: 37.5rem;
+	height: auto;
+	margin: 0 auto 1rem;
+	border: none;
+	aspect-ratio: 16 / 9; /* Ensures proper video proportions */
+}
+
+/* ---------------- Alerts ---------------- */
+.alert {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+	max-width: 31.25rem;
+	margin: 0.5rem auto;
+}
+.floating-alert {
+	width: 95%;
+	max-width: 49.375rem;
+	margin: auto;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3000;
+}
+
+/* ---------------- Views ---------------- */
+[class$="-header"] {
+	opacity: 0.7;
+}
+
+[class$="-header"] h3 + p {
+	font-size: small;
+}
+
+/* -------------- Placeholders ----------------- */
+.placeholder-text {
+	text-align: center;
+	color: rgba(51, 51, 51, 0.5);
+}
+.placeholder-image {
+	display: block;
+	width: 3.125rem;
+	margin: 1rem auto;
+	filter: opacity(0.3);
+}
+
+/* ---------------- Misc ------------------ */
+.right-align {
+	text-align: right;
+}
+.prevent-select {
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+.success {
+	color: #198754;
+}
+
+.danger {
+	color: #dc3545;
+}
+
+.primary {
+	color: #0d6efd;
+}
+
+.warning {
+	color: #ffc107;
+}
+.secondary {
+	color: #6c757d;
+}
+
+/* ---------------- Media Queries ---------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	#program-list {
+		flex-flow: row wrap;
+	}
+
+	#program-list .card {
+		min-width: 18rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.floating-alert {
+		width: 100%;
+		max-width: 50rem;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

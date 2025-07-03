@@ -1,0 +1,37 @@
+{
+	"name": "Hercules",
+	"short_name": "Hercules",
+	"description": "A modern progressive web app called Hercules.",
+	"scope": "/hercules/",
+	"start_url": "/hercules/",
+	"dir": "ltr",
+	"lang": "en-ZA",
+	"prefer_related_applications": false,
+	"categories": ["fitness", "health", "health & fitness"],
+	"orientation": "portrait",
+	"display": "standalone",
+	"background_color": "#fafafa",
+	"theme_color": "#fafafa",
+	"icons": [
+		{
+			"src": "./icons/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "./icons/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "./icons/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./icons/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

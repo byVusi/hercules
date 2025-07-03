@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta
+			name="description"
+			content="Hercules - A modern, offline-ready website."
+		/>
+		<meta name="theme-color" content="#fafafa" />
+		<link rel="icon" href="./icons/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./icons/favicon-16x16.png"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="manifest" href="./manifest.json" />
+		<title>Hercules</title>
+	</head>
+	<body class="prevent-select">
+		<header>
+			<div class="wrapper">
+				<h1 class="app-name"></h1>
+			</div>
+		</header>
+
+		<main>
+			<section class="view active" id="today">
+				<div class="today-header">
+					<h3>Today</h3>
+					<p></p>
+				</div>
+				<div class="today-content">
+					<!-- Content for today's workout will be dynamically loaded here -->
+				</div>
+			</section>
+
+			<section class="view" id="workouts">
+				<div class="workouts-header">
+					<h3>Workouts</h3>
+					<p></p>
+				</div>
+				<div class="workouts-content">
+					<!-- Content for today's workout will be dynamically loaded here -->
+				</div>
+			</section>
+
+			<section class="view" id="exercises">
+				<div class="exercises-header">
+					<h3>Exercises</h3>
+					<p></p>
+				</div>
+				<div class="exercises-content">
+					<!-- Content for today's workout will be dynamically loaded here -->
+				</div>
+			</section>
+
+			<section class="view" id="progress">
+				<div class="progress-header">
+					<h3>Progress</h3>
+					<p></p>
+				</div>
+				<div class="progress-content">
+					<!-- Content for today's workout will be dynamically loaded here -->
+				</div>
+			</section>
+		</main>
+
+		<nav>
+			<div class="wrapper">
+				<ul>
+					<li>
+						<div class="active">
+							<i class="material-icons">today</i>
+							<span>Today</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<i class="material-icons">directions_bike</i>
+							<span>Workouts</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<i class="material-icons">fitness_center</i>
+							<span>Exercises</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<i class="material-icons">trending_up</i>
+							<span>Progress</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<script>
+			// Update the date in the header of each view
+			document.querySelectorAll(".view h3+p").forEach((el) => {
+				el.textContent = `${new Date().toLocaleDateString("en-US", {
+					weekday: "long",
+					month: "long",
+					day: "numeric",
+				})}`;
+			});
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+			integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+			crossorigin="anonymous"
+		></script>
+		<script type="module" src="./js/application.js" defer></script>
+	</body>
+</html>

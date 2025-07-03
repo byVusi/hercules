@@ -1,0 +1,986 @@
+{
+	"workout_1": {
+		"title": "Rotating 5-Day Cycle",
+		"description": "A 5-day workout cycle that rotates through different muscle groups.",
+		"imageUrl": "https://steelsupplements.com/cdn/shop/articles/single-arm-db-row-min_1000x.jpg?v=1662648403",
+		"days": [
+			{
+				"day": 1,
+				"title": "Push Day",
+				"description": "Focus on pushing movements for the upper body.",
+				"exercises": [
+					{
+						"name": "Barbell Overhead Press",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/cGnhixvC8uA?si=tP3aLjf3WIixQxxK",
+						"recommended": "3 sets of 5-7 reps",
+						"muscleGroups": ["shoulders", "triceps", "upper chest"],
+						"equipment": ["barbell", "rack"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Incline Dumbbell Press",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/_NrQUYg7Nlc?si=lgj3IoRlox3uTjZ4",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["chest", "shoulders", "triceps"],
+						"equipment": ["dumbbells", "bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Dips",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/5XkOdAtPn2Y?si=863q1I0HmKoHhy86",
+						"recommended": "3 sets of 8-10 reps",
+						"muscleGroups": ["triceps", "chest", "shoulders"],
+						"equipment": ["bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Cable Lateral Raises",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/Z5FA9aq3L6A?si=QVtTTEVScENXzgOC",
+						"recommended": "2 sets of 12-15 reps",
+						"muscleGroups": ["shoulders"],
+						"equipment": ["cable machine"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Overhead Dumbbell Tricep Extension",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/kZ-ReOdn2qk?si=kKvwLI0lMyMUIzm8",
+						"recommended": "2 sets of 10-12 reps",
+						"muscleGroups": ["triceps"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Chest Fly (Cable or Machine)",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/hhruLxo9yZU?si=yZaStuxST8k_0vam",
+						"recommended": "2 sets of 10-12 reps",
+						"muscleGroups": ["chest"],
+						"equipment": ["cable machine", "pec deck"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 2,
+				"title": "Pull Day",
+				"description": "Focus on pulling movements for the upper body.",
+				"exercises": [
+					{
+						"name": "Pull-Ups (Weighted if possible)",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/o9hwLXsFP_w?si=NvCMTSwQ00VDm54P&amp;start=4",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["back", "biceps", "shoulders"],
+						"equipment": ["pull-up bar"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "One-Arm Dumbbell Row",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/DmUX88nWClo?si=KqZ3nZAUK0n15nWV",
+						"recommended": "3 sets of 8-10 reps",
+						"muscleGroups": ["back", "biceps"],
+						"equipment": ["dumbbell", "bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Chest Supported Rear Delt Row",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/U3nms_qGzFs?si=XL8zj7aXtWz2TX4x",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["rear delts", "upper back", "biceps"],
+						"equipment": ["dumbbells", "incline bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Face Pulls",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/0Po47vvj9g4?si=jeN3-N5nxBYY_2Wa",
+						"recommended": "3 sets of 12-15 reps",
+						"muscleGroups": ["rear delts", "upper back"],
+						"equipment": ["cable machine"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Incline Dumbbell Curls",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/0dT4L6Lsi80?si=BN5Vsp9w5ZrjjM7V",
+						"recommended": "2 sets of 10-12 reps",
+						"muscleGroups": ["biceps"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Reverse Curls (EZ Bar or Dumbbell)",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/hUA-fIpM7nA?si=fnzEPWg6Oy6gcYbm",
+						"recommended": "2 sets of 10-12 reps",
+						"muscleGroups": ["biceps", "forearms"],
+						"equipment": ["EZ bar", "dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 3,
+				"title": "Rest Day",
+				"description": "A day for recovery and mobility.",
+				"exercises": []
+			},
+			{
+				"day": 4,
+				"title": "Legs/Abs Day",
+				"description": "Focus on lower body and core strength.",
+				"exercises": [
+					{
+						"name": "Barbell Back Squat",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/-bJIpOq-LWk?si=5UhZ9kT88-iqM29_",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["quads", "glutes", "core"],
+						"equipment": ["barbell", "rack"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Romanian Deadlift (Dumbbells)",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/2bmuYtv4HbQ?si=MjJY10YX-UXhYCUG",
+						"recommended": "2 sets of 8-10 reps",
+						"muscleGroups": ["hamstrings", "glutes", "lower back"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Bulgarian Split Squats",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/r3jzvjt-0l8?si=jDiY2d3dpQOPZPeG",
+						"recommended": "2 sets of 8-10 reps (each leg)",
+						"muscleGroups": ["quads", "glutes", "core"],
+						"equipment": ["dumbbells", "bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Glute Ham Raise or Nordic Curl",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/SBGYSfoqyfU?si=vCfq6qeeUdHgGXXD",
+						"recommended": "2 sets of 8-10 reps",
+						"muscleGroups": ["hamstrings"],
+						"equipment": ["GHD", "bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Standing Calf Raises",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/g_E7_q1z2bo?si=Fp9ml4wRmdjGO3i7",
+						"recommended": "3 sets of 12-15 reps",
+						"muscleGroups": ["calves"],
+						"equipment": ["calf raise machine"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Weighted Plank",
+						"category": "strength",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/H88Ip-MUWn0?si=gXLwyClIcD9QAefv",
+						"recommended": "2 sets of 30-60 seconds",
+						"muscleGroups": ["core"],
+						"equipment": ["plate", "mat"],
+						"recordLabels": ["sets", "duration", "weight"],
+						"units": "kg",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 5,
+				"title": "Rest Day",
+				"description": "A day for recovery and rest.",
+				"exercises": []
+			}
+		]
+	},
+	"workout_2": {
+		"title": "Rotating 5-Day Fat Loss Cycle",
+		"description": "A high-effort, metabolism-boosting 5-day rotating program focused on fat loss and lean muscle retention.",
+		"imageUrl": "https://www.drip-hiit.com/wp-content/uploads/iStock-1396727797-1-1024x683.jpg",
+		"days": [
+			{
+				"day": 1,
+				"title": "Full Body Strength + Burn",
+				"description": "Resistance circuits with minimal rest to build lean mass and burn calories.",
+				"exercises": [
+					{
+						"name": "Goblet Squat to Press",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/f-Vf2yRRqOg?si=o_BXPSjkhcapDLnn",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["legs", "glutes", "shoulders", "core"],
+						"equipment": ["kettlebell"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Push-Ups",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/WDIpL0pjun0?si=JEZFUtreWwVumVik",
+						"recommended": "3 sets of 10-15 reps",
+						"muscleGroups": ["chest", "triceps", "core"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Jumping Lunges or Reverse Lunges",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/cIkkHg8YZQU?si=R59aZvNQEWhw-ITx",
+						"recommended": "3 sets of 12 reps per leg",
+						"muscleGroups": ["legs", "glutes", "cardio"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Renegade Rows",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/Q28cLuweLv4?si=y6PUQPhejCGCYF5V",
+						"recommended": "3 sets of 8-10 reps per arm",
+						"muscleGroups": ["back", "core", "arms"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Mountain Climbers",
+						"category": "conditioning",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/kLh-uczlPLg?si=nMor5bEOn87UkpHx",
+						"recommended": "3 sets of 30 seconds",
+						"muscleGroups": ["core", "cardio"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "duration"],
+						"units": "seconds",
+						"rest": 30
+					}
+				]
+			},
+			{
+				"day": 2,
+				"title": "Lower Body + Core HIIT",
+				"description": "Lower body resistance paired with core and high-intensity bodyweight movements.",
+				"exercises": [
+					{
+						"name": "Dumbbell Deadlifts",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/plb5jEO4Unw?si=uHEfQ-buKM1joD0m",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["glutes", "hamstrings", "core"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Step-Ups (Fast Tempo)",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/wfhXnLILqdk?si=ibLxs4i0zzsruRGe",
+						"recommended": "3 sets of 12 reps per leg",
+						"muscleGroups": ["quads", "glutes", "cardio"],
+						"equipment": ["step", "bench"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Plank with Shoulder Taps",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/QOCn3_iOAro?si=DVkHe14VCiG2IB4T",
+						"recommended": "3 sets of 30 seconds",
+						"muscleGroups": ["core", "shoulders"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "duration"],
+						"units": "seconds",
+						"rest": 30
+					},
+					{
+						"name": "Kettlebell Swings",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/1cVT3ee9mgU?si=mbsB92_qy55MFaOl&amp;start=12",
+						"recommended": "3 sets of 15-20 reps",
+						"muscleGroups": ["glutes", "hamstrings", "cardio"],
+						"equipment": ["kettlebell"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Burpees",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/1yPltRIm59E?si=SJ62C8OrGPuSyTju&amp",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["full body"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					}
+				]
+			},
+			{
+				"day": 3,
+				"title": "Mobility + Active Recovery",
+				"description": "Gentle movement to enhance recovery, flexibility, and stress relief.",
+				"exercises": []
+			},
+			{
+				"day": 4,
+				"title": "Upper Body Burnout + Core",
+				"description": "Bodyweight and light-resistance exercises to tone upper body and challenge the core.",
+				"exercises": [
+					{
+						"name": "Dumbbell Thrusters",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/sLIswEpOHng?si=xNn6wuq-P3BHA_H_",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["shoulders", "legs", "core"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "TRX Rows or Inverted Rows",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/KOaCM1HMwU0?si=ojmyX8tstRruLHoT",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["back", "arms", "core"],
+						"equipment": ["TRX", "bar"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Plank to Push-Up",
+						"category": "core",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/56vUOad6Irs?si=C0rU4o62WEXKDeJ4",
+						"recommended": "3 sets of 8-10 reps",
+						"muscleGroups": ["core", "chest", "shoulders"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Side Plank Raises",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/k1lijdhm_iY?si=2Wset5pyDptDiGlg",
+						"recommended": "3 sets of 10-12 reps per side",
+						"muscleGroups": ["obliques"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Jump Rope (Intervals)",
+						"category": "conditioning",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/70rVkyDIBrI?si=a4-d8puVH_X9VRV3&amp;start=2",
+						"recommended": "3 sets of 30 seconds",
+						"muscleGroups": ["cardio", "legs"],
+						"equipment": ["jump rope"],
+						"recordLabels": ["sets", "duration"],
+						"units": "seconds",
+						"rest": 30
+					}
+				]
+			},
+			{
+				"day": 5,
+				"title": "Rest Day",
+				"description": "Take a full rest or go for a light walk or stretch session.",
+				"exercises": []
+			}
+		]
+	},
+	"workout_3": {
+		"title": "4-Day Strength Cycle",
+		"description": "A structured program focused on building maximal strength using compound lifts and key assistance work.",
+		"imageUrl": "https://i0.wp.com/www.tierthreetactical.com/wp-content/uploads/2024/10/5-Methods-to-Break-Through-Fitness-Plateaus-Header.jpg?fit=1500%2C900&ssl=1",
+		"days": [
+			{
+				"day": 1,
+				"title": "Upper Body - Heavy Push",
+				"description": "Focus on pressing strength with shoulder and tricep support.",
+				"exercises": [
+					{
+						"name": "Barbell Bench Press",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/ejI1Nlsul9k?si=tm5iv2x4zo0lYs_t",
+						"recommended": "4 sets of 4-6 reps",
+						"muscleGroups": ["chest", "triceps", "shoulders"],
+						"equipment": ["barbell", "bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 180
+					},
+					{
+						"name": "Overhead Press (Barbell or Dumbbell)",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/MMjBnEBnZKM?si=a0IFe9xQPugRuauE",
+						"recommended": "3 sets of 5-7 reps",
+						"muscleGroups": ["shoulders", "triceps"],
+						"equipment": ["barbell", "dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 120
+					},
+					{
+						"name": "Dips (Weighted if possible)",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/5XkOdAtPn2Y?si=863q1I0HmKoHhy86",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["chest", "triceps"],
+						"equipment": ["dip bars"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 120
+					},
+					{
+						"name": "Dumbbell Lateral Raise",
+						"category": "accessory",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/XPPfnSEATJA?si=F818ja4kxLlkLr7R",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["shoulders"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 2,
+				"title": "Lower Body - Squat Focus",
+				"description": "Build lower body strength with emphasis on squatting patterns and quad development.",
+				"exercises": [
+					{
+						"name": "Back Squat",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/-bJIpOq-LWk?si=mkssCBC6_DO31Dbf",
+						"recommended": "4 sets of 4-6 reps",
+						"muscleGroups": ["quads", "glutes", "core"],
+						"equipment": ["barbell", "rack"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 180
+					},
+					{
+						"name": "Hack Squat",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/scs5XcsZuc8?si=B2V11xAt7nT3T4xq",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["quads", "core"],
+						"equipment": ["machine"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 120
+					},
+					{
+						"name": "Walking Lunges",
+						"category": "accessory",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/tQNktxPkSeE?si=fFpRqsCyR-G3QSRQ",
+						"recommended": "2 sets of 10 reps per leg",
+						"muscleGroups": ["quads", "glutes"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "Weighted Plank",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/H88Ip-MUWn0?si=gXLwyClIcD9QAefv",
+						"recommended": "2 sets of 30-45 seconds",
+						"muscleGroups": ["core"],
+						"equipment": ["plate", "mat"],
+						"recordLabels": ["sets", "duration", "weight"],
+						"units": "kg",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 3,
+				"title": "Upper Body - Heavy Pull",
+				"description": "Focus on back and pulling strength using heavy rows and vertical pulls.",
+				"exercises": [
+					{
+						"name": "Chin-Ups",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/B9u9BCyRXqo?si=B77kfrUNLStRy1pW",
+						"recommended": "4 sets of 5-6 reps",
+						"muscleGroups": ["back", "biceps"],
+						"equipment": ["pull-up bar", "weight belt"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 180
+					},
+					{
+						"name": "Barbell Bent-Over Row",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/bm0_q9bR_HA?si=-RGIGSSItZdJZAdw",
+						"recommended": "4 sets of 6-8 reps",
+						"muscleGroups": ["back", "biceps"],
+						"equipment": ["barbell"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 120
+					},
+					{
+						"name": "Dumbbell Seal Row or Chest-Supported Row",
+						"category": "accessory",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/5J8bATi_Yh8?si=SQx0QZ7UN1aHyV_s",
+						"recommended": "3 sets of 8-10 reps",
+						"muscleGroups": ["upper back"],
+						"equipment": ["dumbbells", "bench"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 90
+					},
+					{
+						"name": "EZ Bar Curls",
+						"category": "accessory",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/cdmnvo3augg?si=BzbLsikPnQJ12WgC",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["biceps"],
+						"equipment": ["EZ bar"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 4,
+				"title": "Lower Body - Deadlift Focus",
+				"description": "Target posterior chain strength with heavy hinge-based training.",
+				"exercises": [
+					{
+						"name": "Barbell Deadlift (Conventional or Sumo)",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/pfSMst14EFk?si=LNNOrhZfijBlcL-f",
+						"recommended": "4 sets of 3-5 reps",
+						"muscleGroups": ["hamstrings", "glutes", "back"],
+						"equipment": ["barbell"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 180
+					},
+					{
+						"name": "Romanian Deadlift",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/2bmuYtv4HbQ?si=MjJY10YX-UXhYCUG",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["hamstrings", "glutes"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 120
+					},
+					{
+						"name": "Glute Ham Raise or Nordic Curl",
+						"category": "accessory",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/SBGYSfoqyfU?si=vCfq6qeeUdHgGXXD",
+						"recommended": "3 sets of 6-8 reps",
+						"muscleGroups": ["hamstrings"],
+						"equipment": ["GHD machine", "bench"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 90
+					},
+					{
+						"name": "Hanging Leg Raises",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/7FwGZ8qY5OU?si=6YB09H_2vv4uOi_F",
+						"recommended": "2 sets of 10-15 reps",
+						"muscleGroups": ["core", "hip flexors"],
+						"equipment": ["pull-up bar"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 60
+					}
+				]
+			},
+			{
+				"day": 5,
+				"title": "Optional Recovery / Mobility",
+				"description": "Active recovery, walking, stretching or complete rest.",
+				"exercises": []
+			}
+		]
+	},
+	"workout_4": {
+		"title": "4-Day Fat Loss Cycle",
+		"description": "A fat-loss focused program combining strength, cardio, and high-intensity functional training over four days.",
+		"imageUrl": "https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2019/09/Shirtless-Man-Beard-Battle-Ropes-Smokey-Gym.jpg?quality=86&strip=all",
+		"days": [
+			{
+				"day": 1,
+				"title": "Full Body Metcon",
+				"description": "Total-body circuit with minimal rest to spike heart rate and burn fat.",
+				"exercises": [
+					{
+						"name": "Kettlebell Swings",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/1cVT3ee9mgU?si=mbsB92_qy55MFaOl&amp;start=12",
+						"recommended": "3 rounds of 20 reps",
+						"muscleGroups": ["glutes", "hamstrings", "core"],
+						"equipment": ["kettlebell"],
+						"recordLabels": ["rounds", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Push-Ups",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/WDIpL0pjun0?si=JEZFUtreWwVumVik",
+						"recommended": "3 rounds of 15-20 reps",
+						"muscleGroups": ["chest", "shoulders", "triceps"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["rounds", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Jump Squats",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/BRfxI2Es2lE?si=fxdl0xN6MyTeILLh",
+						"recommended": "3 rounds of 15 reps",
+						"muscleGroups": ["quads", "glutes", "cardio"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["rounds", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Renegade Rows",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/Q28cLuweLv4?si=y6PUQPhejCGCYF5V",
+						"recommended": "3 rounds of 10 reps per side",
+						"muscleGroups": ["back", "arms", "core"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["rounds", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Burpees",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/1yPltRIm59E?si=SJ62C8OrGPuSyTju&amp",
+						"recommended": "3 rounds of 10 reps",
+						"muscleGroups": ["full body"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["rounds", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					}
+				]
+			},
+			{
+				"day": 2,
+				"title": "Lower Body Burn + Core",
+				"description": "Lower-body strength circuit with added ab work to drive conditioning and shape.",
+				"exercises": [
+					{
+						"name": "Goblet Squat",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/f-Vf2yRRqOg?si=q2tzCxLPlF095jHT",
+						"recommended": "3 sets of 12-15 reps",
+						"muscleGroups": ["quads", "glutes", "core"],
+						"equipment": ["kettlebell"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 45
+					},
+					{
+						"name": "Alternating Reverse Lunges",
+						"category": "metabolic",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/8w_iOpqjqNI?si=23JjSx9zyKyprkOR",
+						"recommended": "3 sets of 10 reps per leg",
+						"muscleGroups": ["quads", "glutes", "hamstrings"],
+						"equipment": ["bodyweight", "dumbbells"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 45
+					},
+					{
+						"name": "Step-Ups",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/wfhXnLILqdk?si=ibLxs4i0zzsruRGe",
+						"recommended": "3 sets of 12 reps per leg",
+						"muscleGroups": ["quads", "glutes"],
+						"equipment": ["bench", "step"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 45
+					},
+					{
+						"name": "Plank with Knee Drives",
+						"category": "core",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/kbIyp6lqGL0?si=k7njuzWDoOcfGX6i",
+						"recommended": "3 sets of 30 seconds",
+						"muscleGroups": ["core", "cardio"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "duration"],
+						"units": "seconds",
+						"rest": 30
+					},
+					{
+						"name": "Side Plank Dips",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/eIlUzW50Qqg?si=CR-wCuWhG8kOOGVv",
+						"recommended": "3 sets of 10-12 per side",
+						"muscleGroups": ["obliques"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					}
+				]
+			},
+			{
+				"day": 3,
+				"title": "Upper Body + HIIT Finisher",
+				"description": "Strength-based push/pull training, followed by a metabolic conditioning blast.",
+				"exercises": [
+					{
+						"name": "Dumbbell Shoulder Press",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/HzIiNhHhhtA?si=3xz2CHMZJ08wpR_1",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["shoulders", "triceps"],
+						"equipment": ["dumbbells"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 60
+					},
+					{
+						"name": "Inverted Rows or TRX Rows",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/KOaCM1HMwU0?si=ojmyX8tstRruLHoT",
+						"recommended": "3 sets of 8-10 reps",
+						"muscleGroups": ["back", "biceps"],
+						"equipment": ["TRX", "bar"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 60
+					},
+					{
+						"name": "Incline Push-Ups",
+						"category": "strength",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/Gvm5Q29UHbk?si=EMQhq-FNPMZ8LFZK",
+						"recommended": "3 sets of 10-12 reps",
+						"muscleGroups": ["chest", "triceps"],
+						"equipment": ["bench", "box"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 60
+					},
+					{
+						"name": "Jump Rope (Intervals)",
+						"category": "conditioning",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/70rVkyDIBrI?si=a4-d8puVH_X9VRV3&amp;start=2",
+						"recommended": "3 rounds of 45 seconds",
+						"muscleGroups": ["cardio", "calves"],
+						"equipment": ["jump rope"],
+						"recordLabels": ["rounds", "duration"],
+						"units": "seconds",
+						"rest": 30
+					},
+					{
+						"name": "Burpee + Mountain Climber Combo",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/4SDwAAnnbXQ?si=usJi24I925fXpaPP",
+						"recommended": "3 rounds of 30 seconds",
+						"muscleGroups": ["full body", "core"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["rounds", "duration"],
+						"units": "seconds",
+						"rest": 30
+					}
+				]
+			},
+			{
+				"day": 4,
+				"title": "Core + Cardio Burnout",
+				"description": "Core-focused conditioning session to end the week strong.",
+				"exercises": [
+					{
+						"name": "Russian Twists",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/Tau0hsW8iR0?si=skrGK7qv-KZw6XtV",
+						"recommended": "3 sets of 20 reps (10 per side)",
+						"muscleGroups": ["core", "obliques"],
+						"equipment": ["dumbbell", "medicine ball"],
+						"recordLabels": ["sets", "reps", "weight"],
+						"units": "kg",
+						"rest": 30
+					},
+					{
+						"name": "Bicycle Crunches",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/wnuLak2onoA?si=hJ5bn6neqQre-M9W",
+						"recommended": "3 sets of 30 seconds",
+						"muscleGroups": ["core"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "duration"],
+						"units": "seconds",
+						"rest": 30
+					},
+					{
+						"name": "Leg Raises",
+						"category": "core",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/iunqbW4B7nE?si=m3IHpypJSUCxZ6EO",
+						"recommended": "3 sets of 12-15 reps",
+						"muscleGroups": ["abs", "hip flexors"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 30
+					},
+					{
+						"name": "Box Jumps or Broad Jumps",
+						"category": "conditioning",
+						"type": "compound",
+						"demo": "https://www.youtube.com/embed/757ht_Y-fY0?si=4KL6eFd1ctmVZIS5",
+						"recommended": "3 sets of 8-10 reps",
+						"muscleGroups": ["legs", "cardio"],
+						"equipment": ["box"],
+						"recordLabels": ["sets", "reps"],
+						"units": "bodyweight",
+						"rest": 45
+					},
+					{
+						"name": "High Knees or Sprint Intervals",
+						"category": "conditioning",
+						"type": "isolation",
+						"demo": "https://www.youtube.com/embed/DfjpR6dzLVg?si=i20ODGYYyM3CRMSL",
+						"recommended": "3 rounds of 30 seconds",
+						"muscleGroups": ["cardio"],
+						"equipment": ["bodyweight"],
+						"recordLabels": ["rounds", "duration"],
+						"units": "seconds",
+						"rest": 30
+					}
+				]
+			}
+		]
+	}
+}
