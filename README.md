@@ -86,10 +86,10 @@ The app uses modular async functions to fetch JSON data for:
 Data fetching is handled in /assets/data/js/fetchAppData.js:
 
 -   fetchAppData(url) — generic JSON fetch with error handling
--   fetchManifestJSON() — fetches app manifest
--   fetchWorkoutProgramsJSON() — fetches workout programs
+-   fetchManifest() — fetches app manifest
+-   fetchWorkoutPrograms() — fetches workout programs
 
-These functions are exposed under the appData namespace for easy import and use.
+These functions are exposed under the APP_DATA namespace for easy import and use.
 
 ## Local Storage Management
 
@@ -105,9 +105,9 @@ localStorageManager is a utility module that abstracts safe, asynchronous access
 Example usage:
 
 ```javascript
-import { localStorageManager } from "./js/managers/localStorageManager.js";
-const today = await localStorageManager.lastDateAccessed();
-const workout = await localStorageManager.fetchWorkout();
+import { LOCAL_STORAGE_MANAGER } from "./js/managers/localStorageManager.js";
+const today = await LOCAL_STORAGE_MANAGER.fetch.app.date.lastAccessed();
+const workout = await LOCAL_STORAGE_MANAGER.fetch.workout.data();
 ```
 
 ## Getting started
