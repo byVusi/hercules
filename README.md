@@ -25,7 +25,7 @@ The app manifest and workout program data are fetched asynchronously, ensuring f
 
 ## Features
 
--   4 Workout programs to choose from
+-   Currently 4 Workout programs to choose from
 -   Compound and isolation exercises with detailed metadata (equipment, muscle groups, recommended sets/reps)
 -   Embedded video demos via YouTube
 -   LocalStorage-powered state management including:
@@ -41,7 +41,7 @@ The app manifest and workout program data are fetched asynchronously, ensuring f
 
 ## Workout Programs
 
-Workout programs are defined in JSON under `/assets/data/workoutPrograms.json` with the following structure:
+Workout programs are defined in JSON under `/assets/data/json/programs.json` with the following structure:
 
 ```json
 {
@@ -87,7 +87,7 @@ Data fetching is handled in /assets/data/js/fetchAppData.js:
 
 -   fetchAppData(url) — generic JSON fetch with error handling
 -   fetchManifest() — fetches app manifest
--   fetchWorkoutPrograms() — fetches workout programs
+-   fetchPrograms() — fetches workout programs
 
 These functions are exposed under the APP_DATA namespace for easy import and use.
 
@@ -127,8 +127,52 @@ const workout = await LOCAL_STORAGE_MANAGER.fetch.workout.data();
 ## Project Structure
 
 ```pqsql
-
+assets/
+	data/
+		js/
+			fetchAppData.js
+			fetchWorkoutStats.js
+		json/
+			programs.json
+css/
+	style.css
+icons/
+	android-chrome-192x192.png
+	android-chrome-512x512.png
+	favicon-16x16.png
+	favicon-32x32.png
+	favicon.ico
+	icon-192.png
+	icon-512.png
+js/
+	components/
+		Accordion.js
+		Alert.js
+		Card.js
+		Form.js
+		List.js
+	handlers/
+		click.js
+		load.js
+	managers/
+		localStorageManager.js
+	application.js
+	applicationViews.js
+	constants.js
+	init.js
+	utils.js
+README.md
+apple-touch-icon.png
+index.html
+manifest.json
+service-worker.js
 ```
+
+## Frameworks
+
+- Google Icons
+- Popper
+- Bootstrap
 
 ## License
 
