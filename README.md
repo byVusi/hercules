@@ -12,7 +12,7 @@ Hercules is a modern, offline-capable Progressive Web App (PWA) designed to help
 -   [Getting Started](#getting-started)
 -   [Usage](#usage)
 -   [Project Structure](#project-structure)
--   [Contributing](#contributing)
+-   [Frameworks](#frameworks)
 -   [License](#license)
 
 ## Project Overview
