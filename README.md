@@ -106,8 +106,8 @@ Example usage:
 
 ```javascript
 import { LOCAL_STORAGE_MANAGER } from "./js/managers/localStorageManager.js";
-const today = await LOCAL_STORAGE_MANAGER.fetch.app.date.lastAccessed();
-const workout = await LOCAL_STORAGE_MANAGER.fetch.workout.data();
+const lastDayAccessed = await LOCAL_STORAGE_MANAGER.fetch.app.date.lastAccessed();
+const workoutData = await LOCAL_STORAGE_MANAGER.fetch.workout.data();
 ```
 
 ## Getting started
