@@ -167,7 +167,7 @@ async function communicateWorkoutCompletion() {
 
 		if (workouts.length === data.length) {
 			window.alert(
-				"🎉 Congratulations! You have completed your workouts for today."
+				"🎉 Congratulations! You have completed your workout for today."
 			);
 		}
 	} catch (err) {
