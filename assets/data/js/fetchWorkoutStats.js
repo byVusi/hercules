@@ -47,7 +47,6 @@ function getLastTwoRecords(exerciseName, records) {
  * @returns {Array<number>} An array of numeric values.
  */
 function fetchRecordData(statsArray = [], prop = "weight") {
-	console.log("Fetch Record data", statsArray?.data);
 	const stats = statsArray?.data.map((stat) => Number(stat[prop]));
 	return stats;
 }
